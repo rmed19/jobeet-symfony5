@@ -1,0 +1,10 @@
+App\Entity\Job:
+  job_{1..150}:
+    title: <sentence(6, true)>
+    description: <text()>
+    salary: <numberBetween(10000, 100000)>
+    tags: <sentences(3)>
+    expireAt: <dateTimeBetween('+7 days', '+1 month')>
+    isPublished: <boolean()>
+    location: <city()>
+    category: '@category_*'

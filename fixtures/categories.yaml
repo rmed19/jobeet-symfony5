@@ -1,0 +1,3 @@
+App\Entity\Category:
+  category_{1..15}:
+    title: <word()>
